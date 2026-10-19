@@ -1,3 +1,8 @@
+   ---
+   title: Crop Health Advisor
+   sdk: docker
+   app_port: 7860
+   ---
 # Crop Health Advisor: Early Detection and Management of Crop Diseases and Pest Infestations (SIH26131)
 
 **Stack:** React + TypeScript + Tailwind CSS (frontend) · Python + FastAPI + PyTorch + OpenCV (backend) · SQLite · Leaflet / OpenStreetMap.

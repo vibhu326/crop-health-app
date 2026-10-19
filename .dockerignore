@@ -1,0 +1,7 @@
+   backend/.venv
+   backend/uploads/*
+   backend/crop.db
+   frontend/node_modules
+   frontend/dist
+   data
+   plantvillage
