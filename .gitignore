@@ -1,0 +1,10 @@
+   backend/.venv/
+   backend/uploads/*
+   !backend/uploads/.gitkeep
+   backend/crop.db
+   frontend/node_modules/
+   frontend/dist/
+   data/
+   plantvillage/
+   __pycache__/
+   .DS_Store

@@ -1,0 +1,4 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-stone-100 text-stone-800 antialiased; }
+.leaflet-container img { max-width: none !important; }
+.leaflet-container { font-family: inherit; }

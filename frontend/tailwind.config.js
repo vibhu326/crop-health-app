@@ -1,0 +1,1 @@
+export default { content: ["./index.html", "./src/**/*.{ts,tsx}"], theme: { extend: { fontFamily: { sans: ["Inter", "system-ui", "Segoe UI", "Noto Sans Devanagari", "sans-serif"] } } }, plugins: [] };

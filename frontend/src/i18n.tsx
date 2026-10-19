@@ -1,0 +1,25 @@
+import { createContext } from "react";
+export const D: Record<string, Record<string, string>> = {
+ en: { app: "Crop Health Advisor", tag: "Early detection of crop diseases and pests", nav_detect: "Detect", nav_dash: "Dashboard", nav_map: "Map", nav_sensors: "Sensors", nav_admin: "Expert",
+  upload: "Take or choose a leaf photo", crop: "Crop (optional)", location: "Location", use_gps: "Use my location", lat: "Latitude", lon: "Longitude", follow_of: "Follow-up of report no. (optional)",
+  analyse: "Analyse leaf", analysing: "Analysing…", result: "Result", conf: "Confidence", sev: "Severity estimate", sev_note: "Colour-based estimate, not a lab measurement.", risk: "Weather risk",
+  low: "Low", moderate: "Moderate", high: "High", minimal: "Minimal", low_conf: "Low confidence. Please get an expert to confirm before treating.", advice: "Advice (IPM)", report_no: "Report no.",
+  refer_ext: "Refer to extension officer", refer_lab: "Refer to laboratory", referred: "Referral requested", weather_check: "Weather risk check", temp: "Temperature (°C)", hum: "Humidity (%)", check: "Check",
+  need_loc: "Enter or detect a location first.", total: "Total reports", awaiting: "Awaiting expert", validated: "Expert-validated", alerts: "Active alerts", top: "Most reported", recent: "Recent reports", no_data: "No data yet",
+  legend: "Circles = hotspot areas (about 11 km grid, last 30 days). Dots = individual reports.", sensors_title: "Pest-trap and field sensors", device: "Device name", kind: "Reading type", value: "Value", add: "Add reading",
+  demo: "Add demo readings (simulated)", simulated: "SIMULATED", token: "Expert / admin token", login: "Sign in", logout: "Sign out", confirm: "Confirm label", note: "Note", add_follow: "Add follow-up", followups: "Follow-ups",
+  all: "All", pending: "Needs review", queue: "Review queue", no_model: "The detection model is not trained yet. Follow the README (step 2), then restart the server.", saved: "Saved", sev_pct: "Severity (%)",
+  k_pest_trap_count: "Pest-trap count", k_soil_moisture_pct: "Soil moisture (%)", k_humidity_pct: "Humidity (%)", k_temperature_c: "Temperature (°C)",
+  a_pest_trap: "Pest-trap count is high", a_humidity: "High humidity (fungal risk)", a_queue: "Reports awaiting expert review", a_hotspot: "Disease hotspot", src: "Source" },
+ hi: { app: "फसल स्वास्थ्य सलाहकार", tag: "फसल रोगों और कीटों की शीघ्र पहचान", nav_detect: "पहचान", nav_dash: "डैशबोर्ड", nav_map: "नक्शा", nav_sensors: "सेंसर", nav_admin: "विशेषज्ञ",
+  upload: "पत्ती की फोटो लें या चुनें", crop: "फसल (वैकल्पिक)", location: "स्थान", use_gps: "मेरी लोकेशन उपयोग करें", lat: "अक्षांश", lon: "देशांतर", follow_of: "रिपोर्ट नंबर का फॉलो-अप (वैकल्पिक)",
+  analyse: "पत्ती की जांच करें", analysing: "जांच हो रही है…", result: "परिणाम", conf: "विश्वास स्तर", sev: "गंभीरता अनुमान", sev_note: "रंग-आधारित अनुमान, प्रयोगशाला माप नहीं।", risk: "मौसम जोखिम",
+  low: "कम", moderate: "मध्यम", high: "अधिक", minimal: "न्यूनतम", low_conf: "कम विश्वास। उपचार से पहले कृपया विशेषज्ञ से पुष्टि कराएं।", advice: "सलाह (एकीकृत कीट प्रबंधन)", report_no: "रिपोर्ट नंबर",
+  refer_ext: "कृषि विस्तार अधिकारी को भेजें", refer_lab: "प्रयोगशाला को भेजें", referred: "रेफरल अनुरोध भेजा गया", weather_check: "मौसम जोखिम जांच", temp: "तापमान (°C)", hum: "आर्द्रता (%)", check: "जांचें",
+  need_loc: "पहले स्थान दर्ज करें या पता लगाएं।", total: "कुल रिपोर्ट", awaiting: "विशेषज्ञ की प्रतीक्षा", validated: "विशेषज्ञ द्वारा पुष्ट", alerts: "सक्रिय अलर्ट", top: "सबसे अधिक रिपोर्ट", recent: "हाल की रिपोर्ट", no_data: "अभी कोई डेटा नहीं",
+  legend: "घेरे = हॉटस्पॉट क्षेत्र (लगभग 11 किमी ग्रिड, पिछले 30 दिन)। बिंदु = अलग-अलग रिपोर्ट।", sensors_title: "कीट-जाल और खेत सेंसर", device: "डिवाइस का नाम", kind: "रीडिंग प्रकार", value: "मान", add: "रीडिंग जोड़ें",
+  demo: "डेमो रीडिंग जोड़ें (नकली)", simulated: "नकली (डेमो)", token: "विशेषज्ञ / एडमिन टोकन", login: "साइन इन", logout: "साइन आउट", confirm: "लेबल की पुष्टि करें", note: "टिप्पणी", add_follow: "फॉलो-अप जोड़ें", followups: "फॉलो-अप",
+  all: "सभी", pending: "समीक्षा बाकी", queue: "समीक्षा कतार", no_model: "पहचान मॉडल अभी प्रशिक्षित नहीं है। README (चरण 2) के अनुसार प्रशिक्षण करके सर्वर दोबारा चलाएं।", saved: "सहेजा गया", sev_pct: "गंभीरता (%)",
+  k_pest_trap_count: "कीट-जाल में संख्या", k_soil_moisture_pct: "मिट्टी की नमी (%)", k_humidity_pct: "आर्द्रता (%)", k_temperature_c: "तापमान (°C)",
+  a_pest_trap: "कीट-जाल में संख्या अधिक है", a_humidity: "अधिक आर्द्रता (फफूंद जोखिम)", a_queue: "विशेषज्ञ समीक्षा की प्रतीक्षा में रिपोर्ट", a_hotspot: "रोग हॉटस्पॉट", src: "स्रोत" } };
+export const LangCtx = createContext<{ lang: string; t: (k: string) => string }>({ lang: "en", t: (k) => k });
